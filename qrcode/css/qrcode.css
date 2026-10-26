@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/* object-fit cover serve para ajustar a imagem ou video, quanto em disposistivos moveis, quanto em computadores */
+
+.centro {
+    background-color: rgba(240, 248, 255, 0.145);
+    color: rgba(240, 248, 255, 0.2);
+    padding: 19px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.centro input {
+    margin-top: 13px;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+    border-radius: 7px;
+    text-align: center;
+}
+
+:placeholder-shown {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.centro h1 {
+    color: rgba(240, 248, 255, 0.2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.centro button {
+    padding: 10px 13px;
+    background: rgba(240, 248, 255, 0.274);
+    color: rgba(240, 248, 255, 0.891);
+    font-size: 13px;
+    border-radius: 13px;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: scale(0.5);
+    
+    &:hover {
+        background:  rgba(240, 248, 255, 0.891);
+        color: rgba(30, 31, 32, 0.909);
+        transition: 0.5s;
+    }
+}
+
+.centro .caixote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centro .caixote #qrcode {
+    margin-top: 13px;
+    width: 100%;
+
+}
